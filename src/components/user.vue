@@ -72,6 +72,7 @@
                 this.showbu = true
                 this.isA = true
                 this.isB = true
+                this.$message.success('修改成功');
                 this.resetSetItem('watchStorage', this.user);
             },
             // 取消修改信息
@@ -87,6 +88,7 @@
                 this.showbu = true
                 this.isA = true
                 this.isB = true
+                this.$message.info('取消修改');
             }
         },
         created() {

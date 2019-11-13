@@ -43,6 +43,7 @@
             },
             del(index){
                 this.items.splice(index,1)
+                this.$message.error('删除成功');
             },
             compent(){
                 this.$emit('compent',this.isC,this.currentIndex)

@@ -45,6 +45,7 @@
                     this.user = ''
                     this.phone = ''
                     this.option = '朋友'
+                    this.$message.success('添加成功');
                 }else {
                     this.$message({
                         center: true,

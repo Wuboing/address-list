@@ -35,13 +35,16 @@ router.beforeEach((to, from, next) => {
       }
     } else {
       alert('请先登录')
+      console.log('1')
       goLoginPage()
     }
   } else {
     next()
+    console.log('2')
   }
   function goLoginPage () {
     next({ path: '/home/login', query: { redirect: to.fullPath } })
+    console.log('3')
   }
 })
 
